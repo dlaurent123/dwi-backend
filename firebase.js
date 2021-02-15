@@ -1,4 +1,5 @@
 const admin = require("firebase-admin");
+require("dotenv").config();
 
 const sericeAccount = {
   type: process.env.TYPE,
@@ -16,3 +17,5 @@ const sericeAccount = {
 admin.initializeApp({
   credential: admin.credential.cert(sericeAccount),
 });
+
+module.exports = admin;
