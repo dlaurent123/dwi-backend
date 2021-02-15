@@ -34,7 +34,7 @@ router.get("/", auth.checkFireBaseToken, (req, res) => {
 
 router.post("/", auth.checkFireBaseToken, async (req, res) => {
   const { listingId, message } = req.body;
-  console.log("working");
+
   const listing = listingsStore.getListing(listingId);
   if (!listing) return res.status(400).send({ error: "Invalid listingId." });
 
