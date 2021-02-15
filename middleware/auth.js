@@ -1,15 +1,19 @@
-const jwt = require("jsonwebtoken");
+const firebase = require("../firebase");
 
-module.exports = (req, res, next) => {
-  const token = req.header("x-auth-token");
-  if (!token)
-    return res.status(401).send({ error: "Access denied. No token provided." });
-
+const checkFireBaseToken = async (req, res, next) => {
+  console.log("here");
   try {
-    const payload = jwt.verify(token, "jwtPrivateKey");
-    req.user = payload;
+    const token = req.headers.authtoken;
+    const decodedToken = await firebase.auth().verifyIdToken(token);
+    const uid = decodedToken.uid;
+    req.uid = uid;
     next();
-  } catch (err) {
-    res.status(400).send({ error: "Invalid token." });
+  } catch (error) {
+    console.log(error);
+    res.status(401).json({ message: "No authenticated user" });
   }
 };
+
+const check = { name: "dan" };
+
+module.exports = { checkFireBaseToken, check };

@@ -5,7 +5,7 @@ const listings = [
     images: [{ fileName: "jacket1" }],
     price: 100,
     categoryId: 5,
-    userId: 1,
+    userId: "KFs7ZxX3dcdJWduxQS3HZMvE2Vp2",
     location: {
       latitude: 37.78825,
       longitude: -122.4324,
@@ -17,7 +17,7 @@ const listings = [
     images: [{ fileName: "couch2" }],
     categoryId: 1,
     price: 1200,
-    userId: 2,
+    userId: "KFs7ZxX3dcdJWduxQS3HZMvE2Vp2",
     location: {
       latitude: 37.78825,
       longitude: -122.4324,
@@ -35,7 +35,7 @@ const listings = [
     ],
     price: 1000,
     categoryId: 1,
-    userId: 1,
+    userId: "KFs7ZxX3dcdJWduxQS3HZMvE2Vp2",
     location: {
       latitude: 37.78825,
       longitude: -122.4324,
@@ -47,7 +47,7 @@ const listings = [
     images: [{ fileName: "shoes1" }],
     categoryId: 5,
     price: 100,
-    userId: 2,
+    userId: "KFs7ZxX3dcdJWduxQS3HZMvE2Vp2",
     location: {
       latitude: 37.78825,
       longitude: -122.4324,
@@ -59,7 +59,7 @@ const listings = [
     images: [{ fileName: "camera1" }],
     price: 300,
     categoryId: 3,
-    userId: 1,
+    userId: "KFs7ZxX3dcdJWduxQS3HZMvE2Vp2",
     location: {
       latitude: 37.78825,
       longitude: -122.4324,
@@ -71,7 +71,7 @@ const listings = [
     images: [{ fileName: "camera2" }],
     price: 350,
     categoryId: 3,
-    userId: 1,
+    userId: "KFs7ZxX3dcdJWduxQS3HZMvE2Vp2",
     location: {
       latitude: 37.78825,
       longitude: -122.4324,
@@ -84,7 +84,7 @@ const listings = [
     images: [{ fileName: "couch3" }],
     categoryId: 1,
     price: 950,
-    userId: 2,
+    userId: "KFs7ZxX3dcdJWduxQS3HZMvE2Vp2",
     location: {
       latitude: 37.78825,
       longitude: -122.4324,
@@ -96,7 +96,7 @@ const listings = [
     images: [{ fileName: "shoes2" }],
     categoryId: 5,
     price: 50,
-    userId: 2,
+    userId: "KFs7ZxX3dcdJWduxQS3HZMvE2Vp2",
     location: {
       latitude: 37.78825,
       longitude: -122.4324,
