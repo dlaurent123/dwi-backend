@@ -1,8 +1,8 @@
 const firebase = require("../firebase");
 
 const checkFireBaseToken = async (req, res, next) => {
-  console.log("here");
   try {
+    console.log("backend");
     const token = req.headers.authtoken;
     const decodedToken = await firebase.auth().verifyIdToken(token);
     const uid = decodedToken.uid;
